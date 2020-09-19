@@ -1,0 +1,272 @@
+.container{
+    background-color:   hsl(229, 57%, 11%);  
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.sub-container{
+background: url('./images/bg-desktop.png');
+display: flex;
+justify-content: center;
+align-items: flex-start;
+width: 100%;
+height: 50%;
+}
+.file-storage{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 60%;
+    position: relative;
+    top: -85px;
+}
+.file-container{
+    background:hsl(228, 56%, 26%);
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 0.7rem;
+    border-top-right-radius: 37%;
+
+}
+.fylo{
+    height: 28%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.folders{
+    margin-left: 9%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30%;
+    width: 70%;
+}
+
+
+.document{
+    /* border: 1px solid red; */
+    height: 75%;
+    width: 20%;
+    background: hsl(229, 57%, 11%);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.document img{
+    height: 65%;
+    width: 55%;   
+}
+.folder{
+    /* border: 1px solid red; */
+    height: 75%;
+    width: 20%;
+    background: hsl(229, 57%, 11%);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.folder img{
+    height: 55%;
+    width: 55%;   
+}
+
+.upload{
+    height: 75%;
+    width: 20%;
+    background: hsl(229, 57%, 11%);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload img{
+    height: 55%;
+    width: 55%;   
+}
+.file-usage{
+    background:hsl(228, 56%, 26%);
+    width: 42%;
+    margin-left: 2%;
+    height: 75%;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+.storage-info{
+    /* border: 1px solid black; */
+    background: white;
+    position: relative;
+    top: -46px;  
+    left: -27px;
+    width: 30%;
+    border-radius: 0.6rem;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    
+}
+.storage-info-text{
+    margin-top: 15px;
+    height: 50%;
+    padding: 2.3%;
+    font-weight: 100;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bold{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+.normal{
+padding-top: 2%;
+font-size: small;
+}
+.bold1{
+    font-weight: bold;
+}
+.pointer{
+    height: 70%;
+    border-right: 50px solid white;
+    border-bottom: 25px solid transparent;
+    position: relative;
+    bottom: -16%;  
+}
+.text-container{
+    margin-top: -40px;
+    padding-left: 40px;
+    color: white;
+}
+.range{
+    display: flex;
+    width: 85%;
+    height: 13%;
+    border-radius: 15px;
+    background: hsl(229, 57%, 11%); 
+    align-self: center;
+    margin: 2.5%;
+}
+.bar{
+    height: 80%;
+    width: 75%;
+    border-radius: 15px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    margin-left: 3px;
+}
+.notch{
+    width: 3.5%;
+    height: 100%;
+    background: white;
+    border-radius: 50%;
+}
+.min-max{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    color: white;
+    width: 85%;
+    height: 10%;
+    margin-top: -5px;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+
+}
+.min{
+    font-size: 13px
+}
+.max{
+    font-size: 13px
+}
+
+@media screen and (max-width:575px){
+    .container{
+        align-items: center;  
+    }
+   .file-storage{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        height: 100%;
+   }
+
+   .sub-container{  
+       height: 100%;
+       background: url('images/bg-mobile.png');
+
+   }
+   .file-container{
+       width: 70%;
+       height: 30%;
+       margin-bottom: 4%;
+   }
+
+   .file-usage{
+     width: 70%;
+     height: 30%; 
+     align-self: center;
+     margin-left: 0; 
+     justify-content: space-around;
+   }
+   .fylo img{
+    height: 100%;
+    width: 65%;   
+}
+
+.pointer{
+    display: none;
+}
+
+.storage-info{
+    top: 0;
+    left: 0;
+    align-self: center;
+    top: 80%;
+    width: 45%;
+}
+.storage-info-text{
+    padding: 3%;
+}
+
+.range{
+    margin-top: -5%;
+   height: 8%; 
+}
+.text-container{
+    margin-top: -25%;
+    font-size: 14px;
+    text-align: center;
+    padding-left: 0;
+}
+
+.bold{
+    font-size: 26px;
+}
+.normal{
+ font-size: x-small;   
+}
+.notch{
+    width: 5%;
+}
+.min-max{
+    margin-top: -8%;
+}
+}
